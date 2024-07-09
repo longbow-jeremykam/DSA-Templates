@@ -7,7 +7,7 @@
 
 using System.Diagnostics;
 
-PriorityQueue<String, String> queue = new PriorityQueue<String, String>(/*Comparer<String>.Create((x, y) => y.Length.CompareTo(x.Length))*/);
+PriorityQueue<String, String> queue = new PriorityQueue<String, String>();
 
 queue.Enqueue("B", "B");
 queue.Enqueue("C", "C");
