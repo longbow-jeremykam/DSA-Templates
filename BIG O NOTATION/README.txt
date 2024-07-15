@@ -1,5 +1,5 @@
 ﻿
-	BIG O NOTATION - How code slows as data 
+	BIG O NOTATION - How code slows as data grows
 
 1. Describes the performance of algorithms as the amount of data increases
 2. Machine independent

@@ -19,27 +19,37 @@ namespace BINARY_SEARCH_RECURSIVE
             //REPEAT! ...until target value is found
             //***************************************************************
 
-            int[] arr = new int[] {
-                9, 5, 13, 3, 8, 7, 2, 12, 6, 10, 4, 11, 1
-            };
+            //int[] arr = new int[] {
+            //    9, 5, 13, 3, 8, 7, 2, 12, 6, 10, 4, 11, 1
+            //};
 
-            int index = binarySearch(arr, 14, 0, arr.Length - 1);
+            int[] arr = new int[10000];
 
-            Console.WriteLine("index of 14: " + index);
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = i + 1;
+            }
+
+            int index = binarySearch(arr, 3555, 0, arr.Length - 1);
+
+            Console.WriteLine("index of 3555: " + index);
 
             Console.ReadKey();
         }
 
         public static int binarySearch(int[] arr, int target, int l, int r)
         {
-            if (target > r)
+            if (l > r)
             {
                 return -1;
             }
 
             Array.Sort(arr);
+            //1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ,13
 
             int mid = l + (r - l) / 2;
+
+            Console.WriteLine("middle: " + mid);
 
             if (arr[mid] == target)
             {
