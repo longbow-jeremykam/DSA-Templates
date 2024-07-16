@@ -36,7 +36,7 @@ int main()
     std::cout << stack.size();
 
     //STACK CANNOT BE TRAVERSED!
-    //but it can be looped through but the stack will be empty by the end of the loop
+    //however it can be looped through but the stack will be empty by the end of the loop
     while (stack.size() > 1) {
         std::cout << stack.top() << endl;
         stack.pop();
